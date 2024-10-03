@@ -1094,8 +1094,8 @@ h2 {
   .airc .div1 p {
     font-size: 15px !important;
     position: relative;
-    width: 90% !important;
-   left: 20px;
+    width: 100% !important;
+   /* left: 20px; */
 
   }
 
