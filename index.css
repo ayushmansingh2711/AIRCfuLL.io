@@ -258,6 +258,7 @@ body {
     width: 90%;
     /* Ensure it takes full width on small screens */
     height: auto;
+    margin: 0 auto;
     /* Maintain aspect ratio */
     margin-top: -50px;
 
