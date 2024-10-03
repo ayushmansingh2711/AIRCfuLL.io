@@ -23,7 +23,7 @@ body {
   font-family: "Cairo", sans-serif;
   background-color: white;
   color: black;
-  overflow-x: hidden;
+  /* overflow: hidden; */
   margin: 0px;
   padding: 0px;
 
@@ -147,9 +147,10 @@ body {
 /* Start Landing */
 .landing {
   position: relative;
+  background-color: #00274d;
 }
 
-.landing::before {
+/* .landing::before {
   content: "";
   position: absolute;
   top: 0;
@@ -164,7 +165,7 @@ body {
   -ms-transform: skewY(-6deg);
   -o-transform: skewY(-6deg);
   transform-origin: top left;
-}
+} */
 
 .landing .container {
   min-height: calc(100vh - 72px);
@@ -193,7 +194,7 @@ body {
 
 @media (max-width: 991px) {
   .landing {
-    width: 104%;
+    width: 100%;
   }
 
   .landing .text {
@@ -221,7 +222,6 @@ body {
 .landing .text p {
   font-size: 23px;
   position: relative;
-  right: 20px;
   top: -120px;
   line-height: 1.7;
   margin: 5px 0 0;
