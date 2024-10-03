@@ -58,10 +58,10 @@
   @media (max-width: 767px) {
     .header .logo {
      position: relative;
-      height: 15px;
+      height: 22px;
     }
     .header{
-      width: 96%;
+      width: 98.7%;
     }
   }
   
@@ -107,8 +107,8 @@
   
   @media (max-width: 767px) {
     .header .main-nav > li > a {
-      padding: 7px;
-      font-size: 8px;
+      padding: 6px;
+      font-size: 12px;
       height: 40px;
     }
   }
@@ -265,7 +265,7 @@
     }
     .landing .text .inr p{
      font-size: 16px !important;
-     background: -webkit-linear-gradient(360deg, white 74%, orange 35%) !important;
+     background: -webkit-linear-gradient(360deg, white 67%, orange 35%) !important;
      -webkit-background-clip: text !important;
    -webkit-text-fill-color: transparent !important;
     }
