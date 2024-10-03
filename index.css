@@ -689,7 +689,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: #002d62;
   padding: 20px 0;
 }
 
@@ -1094,7 +1094,8 @@ h2 {
   .airc .div1 p {
     font-size: 15px !important;
     position: relative;
-    left: 50px;
+    width: 80% !important;
+   left: 40px;
 
   }
 
@@ -1367,10 +1368,10 @@ h2 {
   width: 90%;
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-align: justify;
-    width: 70%;
+    width: 100%;
   }
 
   p mark {
