@@ -13,3 +13,24 @@ document.querySelectorAll('.question').forEach(item => {
       }
     });
   });
+
+  // Hamburger menu
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const body1=document.querySelector('.landing');
+
+
+  hamburger.addEventListener('click', () => {
+    // console.log('hello')
+    navLinks.classList.toggle('show');
+    body1.classList.toggle('move');
+});
+
+// setTimeout(() => {
+//   hamburger.click()
+// }, (3000));
+// hamburger.addEventListener('click', () => {
+//     console.log('hello')
+// })
+// console.log('object')
