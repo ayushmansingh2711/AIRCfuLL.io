@@ -17,8 +17,8 @@ document.querySelectorAll('.question').forEach(item => {
   // Hamburger menu
   document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    const body1 = document.getElementById('body1');
+    const navLinks = document.getElementById('nav-links');
+    const body1 = document.querySelector('.landing');
   
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('show');
