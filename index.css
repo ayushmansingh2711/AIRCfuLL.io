@@ -104,9 +104,11 @@ header {
 /* Hamburger icon style */
 .hamburger {
   display: none;
+  width: 30px;
   font-size: 30px;
   color: white;
   cursor: pointer;
+  z-index: 12;
 
 }
 
