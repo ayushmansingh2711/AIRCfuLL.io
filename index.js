@@ -15,17 +15,29 @@ document.querySelectorAll('.question').forEach(item => {
   });
 
   // Hamburger menu
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const body1 = document.getElementById('body1');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      body1.classList.toggle('move');
+    });
+  });
+  
 
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  const body1=document.querySelector('.landing');
+
+//   const hamburger = document.getElementById('hamburger');
+//   const navLinks = document.getElementById('nav-links');
+//   const body1=document.querySelector('.landing');
 
 
-  hamburger.addEventListener('click', () => {
-    // console.log('hello')
-    navLinks.classList.toggle('show');
-    body1.classList.toggle('move');
-});
+//   hamburger.addEventListener('click', () => {
+//     // console.log('hello')
+//     navLinks.classList.toggle('show');
+//     body1.classList.toggle('move');
+// });
 
 // setTimeout(() => {
 //   hamburger.click()
