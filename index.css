@@ -1089,7 +1089,7 @@ h2 {
   align-items: center;
   padding: 2rem 0 0;
   gap: 2rem;
-  top: -60px;
+  top: -30px;
 }
 
 @media only screen and (max-width: 768px) {
