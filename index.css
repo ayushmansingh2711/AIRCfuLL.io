@@ -52,12 +52,14 @@ header {
 .logo img {
   max-width: 150px;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  font-size: 25px;
 }
 
 .nav-links li {
