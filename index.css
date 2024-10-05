@@ -391,6 +391,11 @@ header {
   .work-steps .container {
     flex-direction: column;
   }
+  .work-steps{
+    position: relative;
+    top: -70px;
+   
+  }
 }
 
 .work-steps .image {
@@ -876,6 +881,10 @@ h2 {
 @media (max-width: 768px) {
   .faq-grid {
     grid-template-columns: 1fr;
+  }
+  .faq-container{
+    position: relative;
+    top: -40px;
   }
 }
 
