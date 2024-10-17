@@ -182,22 +182,6 @@ header {
   background-color: #00274d;
 }
 
-/* .landing::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -40px;
-  width: 103%;
-  height: 100%;
-  background-color: #00274d;
-  z-index: -1;
-  transform: skewY(-6deg);
-  -webkit-transform: skewY(-6deg);
-  -moz-transform: skewY(-6deg);
-  -ms-transform: skewY(-6deg);
-  -o-transform: skewY(-6deg);
-  transform-origin: top left;
-} */
  .move{
   margin-top: 238px;
  }
@@ -222,7 +206,6 @@ header {
   height: 272px;
   position: relative;
   top: -100px;
-
 
 }
 
@@ -311,7 +294,6 @@ header {
   }
 
   .landing .pic {
- 
   display: flex;
   justify-content: space-between;
   /* height: 40px!important; */
@@ -335,13 +317,9 @@ header {
 }
 
 .landing .pic {
- 
   display: flex;
   justify-content: space-between;
   /* height: 40px!important; */
- 
-
- 
   img{
     width: 100px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -511,27 +489,42 @@ header {
 
 .main-title1 {
   font-size: 50px;
-  background: -webkit-linear-gradient(360deg, rgb(9, 9, 9) 38%, orange 30%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
+  font-weight: 700;
   position: relative;
   top: -50px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.main-title1 mark {
+ color: rgb(11, 4, 1);
+background: transparent;
+}
+.main-title1 span {
+  color: orange;
+ background: transparent;
+ }
 
 @media screen and (max-width: 768px) {
   .main-title1 {
-    font-size: 30px;
-    background: -webkit-linear-gradient(360deg, rgb(9, 9, 9) 32%, orange 30%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+   
   }
 
   .work-steps .info .box {
     background-color: white;
   }
 }
+ @media (max-width: 1200px) {
+  .main-title1 {
+    font-size: 30px;
+   
+  }
+}
+
+@media (max-width: 992px) {
+  .main-title1 {
+    font-size: 30px;
+  }
+} 
 
 /* End Work Steps */
 
@@ -656,21 +649,11 @@ header {
   font-weight: 700;
   display: flex;
   position: relative;
-
-  top: 20px;
-}
-
-.workshop {
-  font-weight: bold;
-  width: 90%;
   justify-content: center;
-  display: flex;
   left: 50px;
-  position: relative;
   top: 20px;
-
-  img {}
 }
+
 
 .work h1 {
   background-color: #00274d;
@@ -694,16 +677,6 @@ header {
   font-size: 4vw;
   /* Responsive font size */
 }
-
-/* .workshop .work img{
-    height: 50px;
-    width: 50px;
-    mix-blend-mode: color-burn;
-  margin-left: 50px;
-  vertical-align: middle;
-  margin-left: 10px;
-    
-  } */
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 667px) {
@@ -751,10 +724,10 @@ header {
 
 .CompetitionLevelsSection h1 {
   text-align: center;
-  font-size: 2.5em;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-weight: 800;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .CompetitionLevelsSection h1 span {
@@ -1040,68 +1013,6 @@ h2 {
 
 /* End Animation */
 
-/* Students Box  */
-/* .container1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    width: 90%;
-    position: relative;
-    margin: 55px auto 0; 
-}
-
-/* .box1 {
-    background-color: white;
-    color: #00274d;
-    width: calc(30% - 20px); 
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    margin: 10px; Space between boxes
-} */
-
-/* .box1 h2 {
-    font-size: 29px;
-    margin-bottom: 24px;
-    font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
-
-/* .box1 ul {
-    list-style-type: none;
-    padding: 0;
-    color: #0c144c;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.box1 ul li {
-    margin: 10px 0;
-    font-size: 18px;
-} */
-
-/* .highlight {
-    color: orange;
-    font-size: 17px; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.cont {
-    background-color: #00274d;
-} */
-
-/* Media Queries for Smaller Screens */
-/* @media (max-width: 768px) {
-    .box1 {
-        width: 100%; /* Two boxes per row */
-/* } */
-/* .container1{
-      flex-wrap: wrap;
-    }
-} */
-
-
-
-/* end  Students Box  */
 
 /* upcomin workshop */
 
@@ -1322,12 +1233,16 @@ h2 {
 }
 
 .partners .div1 {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   
   gap: 1.5rem;
+  
 }
 
+
 .partners .div2 {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   border-width: 2px;
@@ -1405,8 +1320,8 @@ h2 {
   }
 
   p {
-    font-size: 1.4rem;
-    font-weight: 650;
+    font-size: 1.1rem;
+    font-weight: 500;
     text-align: justify;
   }
 
@@ -1448,9 +1363,10 @@ h2 {
   width: 90%;
 
   p {
-    font-size: 1.4rem ;
-    font-weight: 700;
-    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 500 ;
+ 
+   justify-content: center;
     width: 100% !important;
   }
 
@@ -1472,6 +1388,7 @@ h2 {
     width: 15rem;
     border-radius: 4px;
     object-fit: cover;
+    cursor: pointer;
   }
 }
 
@@ -1496,3 +1413,14 @@ h2 {
 }
 
 /* end about airc */
+
+
+
+
+
+
+
+
+
+
+
